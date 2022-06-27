@@ -1,0 +1,201 @@
+#wp-post {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#wp-post .post-curr{
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+}
+
+#wp-post .post-recommend{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.329);
+}
+
+#wp-post .tab-content{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+/* ------------------------ BOX-HEAD ----------------------- */
+
+#wp-post #current-post .box-head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#wp-post #current-post .box-head h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* ------------------------ BOX-BODY ----------------------- */
+
+/* --------- POST-THUMB ---------- */
+#wp-post #current-post .box-body .post-thumb {
+    text-align: center;
+}
+
+#current-post .box-body .post-thumb img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --------- POST-CONTENT ---------- */
+#current-post .box-body .post-content{
+    margin-top: 30px;
+}
+#current-post .box-body .post-content ul#list-index-post {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul#list-index-post li {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+ul#list-index-post li:last-child{
+    margin-bottom: 0;
+}
+
+ul#list-index-post li .post-title {
+    cursor: pointer;
+    padding: 20px;
+    background: #34495e;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    position: relative;
+}
+
+a.click {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    display: inline-block;
+    padding: 20px;
+}
+
+ul#list-index-post li .post-answer {
+    background: rgba(128, 128, 128, 0.164);
+    padding: 10px 20px 10px 20px;
+    text-align: justify;
+    font-weight: 400;
+    font-size: 17px;
+    display: none;
+}
+
+/* ------------------------- POST-RECOMMEND ----------------------- */
+.post-recommend h1{
+    flex-basis: 100%;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+
+.post-recommend ul#list-post-recommend {
+    /* flex-basis: 100%; */
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden; 
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.post-recommend ul#list-post-recommend li {
+    margin-right: 20px;
+}
+
+.post-recommend ul#list-post-recommend li:last-child{
+    margin-right: 0;
+}
+
+
+.post-recommend .icon-slider{
+    flex-basis: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.post-recommend .icon-slider .icon-left, 
+.post-recommend .icon-slider .icon-right {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    background: #34495e;
+}
+
+
+/* -------------------------- TAB-CONTENT ------------------------- */
+
+#wp-post .tab-content .box-head {
+    flex-basis: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#wp-post .tab-content .box-body {
+    flex-basis: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+#wp-post .tab-content .box-body ul#list-click-tab {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+#wp-post .tab-content .box-body ul#list-click-tab li {
+    flex-basis: 15%;
+    margin-right: 20px;
+    background: cornflowerblue;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#wp-post .tab-content .box-body ul#list-click-tab li:last-child{
+    margin-right: 0;
+}
+
+#wp-post .tab-content .box-body ul#list-click-tab li:hover {
+    background: rgba(100, 148, 237, 0.883);
+}
+
+#wp-post .tab-content .box-body ul#list-click-tab li a {
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#wp-post .tab-content .box-body #list-tab-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#wp-post .tab-content .box-body #list-tab-content li {
+    flex-basis: 100%;
+    padding-bottom: 30px;
+    display: none;
+}

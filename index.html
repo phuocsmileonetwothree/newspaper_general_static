@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News-Paper Tổng Hợp Front-End</title>
+    <!-- -------------- LINK CSS -------------- -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- -------------- LINK JS -------------- -->
+    <script src="assets/js/file_jquery_3.6.0.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- -------------- LINK FONT -------------- -->
+    <link rel="stylesheet" href="assets/font/Font-awesome/css/all.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="site">
+        <div id="wrapper">
+            <!-- ------------------------------- WP-HEADER ------------------------------- -->
+            <div id="header">
+                <div class="container justify_content_between">
+                    <!-- ----------- Logo ----------- -->
+                    <div id="logo">
+                        <img src="assets/image/logo-new-1.png">
+                    </div>
+                    <!-- ----------- Form Search ----------- -->
+                    <form action="">
+                        <input type="text" name="search" id="search" placeholder="Bạn muốn tìm gì">
+                        <span class="icon-search"><i class="fas fa-search"></i></span>
+                    </form>
+                </div>
+                <div class="container">
+                    <!-- ----------- Main Menu ----------- -->
+                    <nav>
+                        <ul id="main-menu">
+                            <li><a href="">Trang chủ</a></li>
+                            <li><a href="">Thời trang</a></li>
+                            <li><a href="">Đời sống</a></li>
+                            <li><a href="">Xã hội</a></li>
+                            <li><a href="">Bóng đá</a></li>
+                            <li><a href="">Video</a></li>
+                            <li><a href="">Sự kiện</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                    <a href="" class="icon-respon-menu fas fa-bars"></a>
+                </div>
+            </div>
+
+            <!-- ------------------------------ WP-FEATURED ------------------------------ -->
+            <div id="wp-featured" class="container">
+                <div class="box-head">
+                    <h3>Nổi bật</h3>
+                </div>
+                <div class="box-body">
+                    <ul id="list-featured-post" class="justify_content_between">
+                        <!-- ----------- 1 ---------- -->
+                        <li>
+                            <a href="post.html" class="post-thumb allow-click">
+                                <img src="assets/image/post-1.png">
+                            </a>
+                            <a href="" class="post-title">Xu hướng thời trang hè 2020: Những mảnh ghép đáng được chú
+                                ý</a>
+                        </li>
+                        <!-- ----------- 2 ---------- -->
+                        <li>
+                            <a href="" class="post-thumb">
+                                <img src="assets/image/post-2.png">
+                            </a>
+                            <a href="" class="post-title">Buổi trình diễn thời trang mùa xuân tại Đại học Michigan đã
+                                bắt
+                                đầu</a>
+                        </li>
+                        <!-- ----------- 3 ---------- -->
+                        <li>
+                            <a href="" class="post-thumb">
+                                <img src="assets/image/post-3.png">
+                            </a>
+                            <a href="" class="post-title">Bật mí cách mặc đẹp cho người mập trở nên thon gọn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ------------------------------ WP-CONTENT ------------------------------- -->
+            <div id="wp-content" class="container">
+
+                <!-- ----------- #content ---------- -->
+                <div id="content">
+                    <div class="box-head">
+                        <h3>Bài viết mới</h3>
+                    </div>
+                    <div class="box-body">
+                        <ul id="list-news-post">
+                            <!-- ---------- 1 ---------- -->
+                            <li>
+                                <div class="more-info-thumb">
+                                    <a href="" class="post-thumb">
+                                        <img src="assets/image/thumb-1.png">
+                                    </a>
+                                </div>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Bạn có phải là một người phụ nữ có phong cách?</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">Phạm Hữu Phước</a>
+                                        <span class="post-date">11/5/2021</span>
+                                    </div>
+                                    <div class="post-excerpts">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- ---------- 2 ---------- -->
+                            <li>
+                                <div class="more-info-thumb">
+                                    <a href="" class="post-thumb">
+                                        <img src="assets/image/thumb-2.png">
+                                    </a>
+                                </div>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Cách để bạn luôn tỏa sáng trước đám đông</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">Phạm Hữu Phước</a>
+                                        <span class="post-date">11/5/2021</span>
+                                    </div>
+                                    <div class="post-excerpts">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- ---------- 3 ---------- -->
+                            <li>
+                                <div class="more-info-thumb">
+                                    <a href="" class="post-thumb">
+                                        <img src="assets/image/thumb-3.png">
+                                    </a>
+                                </div>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Những kiểu tóc mới là xu hướng của giới trẻ 2020</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">Phạm Hữu Phước</a>
+                                        <span class="post-date">11/5/2021</span>
+                                    </div>
+                                    <div class="post-excerpts">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- ---------- 4 ---------- -->
+                            <li>
+                                <div class="more-info-thumb">
+                                    <a href="" class="post-thumb">
+                                        <img src="assets/image/thumb-4.png">
+                                    </a>
+                                </div>
+                                <div class="more-info">
+                                    <a href="" class="post-title">15 địa điểm du lịch nổi tiếng bạn cần đến tại Việt
+                                        Nam</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">Phạm Hữu Phước</a>
+                                        <span class="post-date">11/5/2021</span>
+                                    </div>
+                                    <div class="post-excerpts">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- ---------- 5 ---------- -->
+                            <li>
+                                <div class="more-info-thumb">
+                                    <a href="" class="post-thumb">
+                                        <img src="assets/image/thumb-5.png">
+                                    </a>
+                                </div>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Hãy xách balo lên và đi và trải nghiệm những khoảnh
+                                        khắc
+                                        thú vị</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">Phạm Hữu Phước</a>
+                                        <span class="post-date">11/5/2021</span>
+                                    </div>
+                                    <div class="post-excerpts">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- ---------- 6 ---------- -->
+                            <li>
+                                <div class="more-info-thumb">
+                                    <a href="" class="post-thumb">
+                                        <img src="assets/image/thumb-6.png">
+                                    </a>
+                                </div>
+                                <div class="more-info">
+                                    <a href="" class="post-title">Top 10 nữ hoàng DJ nỗi tiếng nhất Las Vegas bạn cần
+                                        biết</a>
+                                    <div class="post-published">
+                                        <a href="" class="post-author">Phạm Hữu Phước</a>
+                                        <span class="post-date">11/5/2021</span>
+                                    </div>
+                                    <div class="post-excerpts">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+                                        facilisis.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- ----------- #sidebar ---------- -->
+                <div id="side-bar">
+                    <div class="ads">
+                        <img src="assets/image/ads.png">
+                    </div>
+                    <div id="side-bar-topic">
+                        <div class="box-head">
+                            <h3>Chủ đề quan tâm</h3>
+                        </div>
+                        <div class="box-body">
+                            <ul id="list-topic">
+                                <!-- --------- 1 --------- -->
+                                <li>
+                                    <a href="">
+                                        <span class="theme-post">Thời trang</span>
+                                        <span class="num-post">20</span>
+                                    </a>
+                                </li>
+                                <!-- --------- 2 --------- -->
+                                <li>
+                                    <a href="">
+                                        <span class="theme-post">Đời sống</span>
+                                        <span class="num-post">102</span>
+                                    </a>
+                                </li>
+                                <!-- --------- 3 --------- -->
+                                <li>
+                                    <a href="">
+                                        <span class="theme-post">Xã hội</span>
+                                        <span class="num-post">210</span>
+                                    </a>
+                                </li>
+                                <!-- --------- 4 --------- -->
+                                <li>
+                                    <a href="">
+                                        <span class="theme-post">Bóng đá</span>
+                                        <span class="num-post">111</span>
+                                    </a>
+                                </li>
+                                <!-- --------- 5 --------- -->
+                                <li>
+                                    <a href="">
+                                        <span class="theme-post">Điện ảnh</span>
+                                        <span class="num-post">45</span>
+                                    </a>
+                                </li>
+                                <!-- --------- 6 --------- -->
+                                <li>
+                                    <a href="">
+                                        <span class="theme-post">Sự kiện</span>
+                                        <span class="num-post">12</span>
+                                    </a>
+                                </li>
+                                <!-- --------- 7 --------- -->
+                                <li>
+                                    <a href="">
+                                        <span class="theme-post">Du lịch</span>
+                                        <span class="num-post">310</span>
+                                    </a>
+                                </li>
+                                <!-- --------- 8 --------- -->
+                                <li>
+                                    <a href="">
+                                        <span class="theme-post">Nội trợ</span>
+                                        <span class="num-post">99</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ------------------------------ WP-FOOTER ------------------------------- -->
+            <div id="wp-footer">
+                <div class="container">
+                    <!-- ----------- logo ---------- -->
+                    <div id="logo-footer">
+                        <img src="assets/image/logo-new-1.png">
+                    </div>
+                    <!-- ----------- about ---------- -->
+                    <div id="about">
+                        <div class="box-head">
+                            <h3>Về chúng tôi</h3>
+                        </div>
+                        <div class="box-body">
+                            <p>unitop-newspaper.com là là trang báo điện tử được thành lập vào ngày 11/5/2021 . Tin tức
+                                nhanh nhất, mới nhất, nóng nhất đang diễn ra ở Việt Nam và thế giới về: thời sự, kinh
+                                tế, chính trị, xã hội, giáo dục, thể thao, văn hóa, giải trí, công nghệ, nhịp sống số,
+                                pháp luật, du lịch...
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- ----------- follow ---------- -->
+                    <div id="follow">
+                        <div class="box-head">
+                            <h3>Theo dõi</h3>
+                        </div>
+                        <div class="box-body">
+                            <ul id="list-social-network">
+                                <!-- --------- 1 --------- -->
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+
+                                <!-- --------- 2 --------- -->
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+
+                                <!-- --------- 3 --------- -->
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+
+                                <!-- --------- 4 --------- -->
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------ WP-COPYRIGHT ------------------------------- -->
+            <div id="wp-copyright">
+                <div class="container justify_content_between align_items_center">
+                    <div class="copyright">© phamhuuphuoc123.vn - Trang báo điện tử</div>
+                    <ul id="bottom-menu">
+                        <li>
+                            <a href="">Bảo mật</a>
+                        </li>
+                        <li>
+                            <a href="">Quảng cáo</a>
+                        </li>
+                        <li>
+                            <a href="">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ------------------------------ WP-SPECIAL ------------------------------- -->
+            <div id="back-top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div id="contact-fast">     
+                <div class="contact-head">
+                    <img src="assets/image/NV.png">
+                    <h4>Hãy nhắn tin cho chúng tôi để được tư vấn</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="contact-body">
+                    <ul id="list-recommened">
+                        <li>Bài đăng quảng cáo 2021</li>
+                        <li>Cơ hội việc làm</li>
+                        <li>Cơ hội nhận ưu đãi lên đến 10.000.000đ</li>
+                    </ul>
+                    <p>Tư vấn miễn phí : <a href="tel:0764710821">0764710821</a></p>
+                    <div id="hotline">
+                        <a href="" class="chat">Chat ngay</a>
+                        <a href="tel:0764710821" class="call">Gọi ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wp-respon-menu">
+            <h3>PHP</h3>
+            <ul id="responive-menu">
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Thời trang</a></li>
+                <li><a href="">Đời sống</a></li>
+                <li><a href="">Xã hội</a></li>
+                <li><a href="">Bóng đá</a></li>
+                <li><a href="">Video</a></li>
+                <li><a href="">Sự kiện</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

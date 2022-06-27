@@ -1,0 +1,601 @@
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-style: normal;
+    background: whitesmoke;
+}
+ul,h1,h2,h3{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#wrapper{
+    position: relative;
+    transition: right 0.35s;
+
+}
+
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* -------------------------------------- WP-HEADER -------------------------------------- */
+/* ----------------- LOGO và  FORM ------------------ */
+#header{
+    padding-top: 28px;
+    padding-bottom: 9px;
+    background: #23282d;
+}
+
+#header #logo{
+    padding-bottom: 22px;
+}
+
+#header form{
+    position: relative;
+
+}
+
+#header form input#search{
+    background: #131619;
+    color: #989898;
+    border: none;
+    outline: none;
+    padding: 10px 41px 10px 13px;
+}
+
+#header form span.icon-search{
+    color: #989898;
+    position: absolute;
+    top: 10px;
+    right: 14px;
+}
+
+/* ----------------- MAIN MENU ------------------ */
+nav{
+    display: block;
+    padding-top: 10px;
+    flex-basis: 100%;
+    border-right: 10px solid #ff2d2d;
+}
+
+ul#main-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+ul#main-menu li a{
+    color: #eee;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+ul#main-menu li:first-child a{
+    padding-left: 0;
+}
+
+ul#main-menu li:hover a{
+    color: #4db2ec;
+    transition: color 0.25s;
+}
+
+/* -------------------------------------- WP-FEATURED -------------------------------------- */
+#wp-featured{
+    margin-top: 41px;
+}
+
+/* -------------------- BOX-HEAD-H3 --------------------- */
+#wp-featured .box-head{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+#wp-featured .box-head h3{
+    display: inline-block;
+    background: #23282d;
+    color: #fcfcfc;
+    padding: 4px 12px 2px 12px;
+    align-items: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* -------------------- BOX-BODY-LIST-FEATURED-POST --------------------- */
+
+#wp-featured .box-body{
+    flex-basis: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dadada;
+}
+
+.box-body ul#list-featured-post{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul#list-featured-post li{
+    flex: 31.57894736842105% 0 1;
+
+}
+
+ul#list-featured-post li a.post-thumb{
+    display: block;
+    overflow: hidden;
+}
+ul#list-featured-post li a.post-thumb img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+ul#list-featured-post li a.post-title{
+    display: block;
+    margin-top: 20px;
+    color: #5f5f5f;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+ul#list-featured-post li:hover img{
+    transform: scale(1.1,1.1);
+    transition: all 0.5s;
+}
+/* -------------------------------------- WP-CONTENT -------------------------------------- */
+#wp-content{
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+/* ---------------------------- CONTENT --------------------------- */
+#wp-content #content{
+    flex-basis: 66.8%;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/* ------------ Tiêu đề New Post ------------- */
+#content .box-head{
+    flex-basis: 100%;
+    border-bottom: 2px solid #4db2ec;
+    text-transform: uppercase;
+    
+}
+
+#content .box-head h3{
+    display: inline-block;
+    background: #4db2ec;
+    color: #fcfcfc;
+    padding: 3px 12px 1px 12px;
+    align-items: center;
+    font-size: 16px;
+}
+
+/* ------------ Nội dung New Post ------------- */
+/* ------ THUMB ------ */
+#content .box-body{
+    flex-basis: 100%;
+    padding-top: 30px;
+}
+
+ul#list-news-post li{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 37px;
+}
+
+ul#list-news-post li .more-info-thumb{
+    flex-basis: 35%;
+    padding-right: 15px;
+}
+
+ul#list-news-post li a.post-thumb{
+    display: block;
+    overflow: hidden;
+}
+
+ul#list-news-post li a.post-thumb:hover img{
+    transform: scale(1.1,1.1);
+    transition: all 0.5s;
+}
+
+/* ------ MORE-INFO ------ */
+ul#list-news-post li .more-info{
+    flex-basis: 62%;
+    padding-left: 15px;
+}
+
+.more-info a.post-title{
+    font-size: 21px;
+    color: #111;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.more-info a.post-title:hover{
+    color: #4db2ec;
+
+}
+
+.more-info .post-published{
+    padding: 5px 0;
+}
+
+.more-info .post-published a.post-author{
+    color: #111;
+    font-size: 11px;
+    padding-right: 8px;
+}
+
+.more-info .post-published span.post-date{
+    color: #aaa;
+    font-size: 11px;
+}
+
+.more-info .post-excerpts{
+    font-size: 13px;
+    font-weight: 400;
+    color: #777;
+}
+
+/* ---------------------------- SIDE-BAR --------------------------- */
+#wp-content #side-bar{
+    flex-basis: 32%;
+    padding-left: 15px;
+}
+
+#side-bar .box-head{
+    margin-top: 40px;
+    border-bottom: 2px solid #ff2d2d;
+}
+
+#side-bar .box-head h3{
+    display: inline-block;
+    color: #fcfcfc;
+    background: #ff2d2d;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 3px 13px 1px 13px;
+
+}
+
+#side-bar .box-body{
+    padding-top: 35px;
+}
+
+ul#list-topic li{
+    margin-bottom: 15px;
+}
+
+
+ul#list-topic li a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    color: #212121;
+    text-decoration: none;
+}
+
+ul#list-topic li:hover a{
+    color: #ff2d2d;
+    transition: all 0.25s;
+}
+
+
+
+
+/* -------------------------------------- WP-FOOTER -------------------------------------- */
+#wp-footer{
+    padding-top: 53px;
+    padding-bottom: 75px;
+    background: #2e2f30;
+}
+/* ------------------ LOGO-FOOTER --------------------- */
+#wp-footer #logo-footer{
+    flex-basis: 24.386%;
+    padding-right: 15px;
+}
+
+#logo-footer img{
+    margin-top: 75px;
+}
+
+/* ------------------ ABOUT --------------------- */
+#wp-footer #about{
+    flex-basis: 59.825%;
+    padding-right: 180px;
+    padding-left: 15px;
+}
+
+#about .box-head{
+    margin-bottom: 45px;
+}
+
+#about .box-head h3{
+    text-transform: uppercase;
+    color: #f6f6f6;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#about .box-body p{
+    color: #f6f6f6;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+#about .box-body a{
+    color: #4db2ec;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+}
+/* ------------------ FOLLOW --------------------- */
+#wp-footer #follow{
+    flex-basis: 15.79%;
+    padding-left: 15px;
+}
+
+#follow .box-head{
+    margin-bottom: 45px;
+}
+
+#follow .box-head h3{
+    color: #f6f6f6;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#follow ul#list-social-network{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul#list-social-network li a{
+    background: #434648;
+    display: block;
+    color: #eee;
+}
+
+ul#list-social-network li a:hover{
+    color: #4db2ec;
+    transition: all 0.3s;
+}
+
+
+i.fa-facebook-f{
+    padding: 9px 12px;
+}
+
+i.fa-instagram{
+    padding: 9px 10px;
+}
+
+i.fa-youtube{
+    padding: 9px 8px;
+}
+
+i.fa-pinterest-p{
+    padding: 9px 11px;
+}
+/* -------------------------------------- WP-COPYRIGHT -------------------------------------- */
+#wp-copyright{
+    background: #222527;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#wp-copyright .copyright{
+    flex-basis: 79.7%;
+    padding-right: 60px;
+    color: #fff;
+}
+#wp-copyright ul#bottom-menu{
+
+    flex-basis: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#wp-copyright ul#bottom-menu li a{
+    display: block;
+    padding: 12.5px 0px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#wp-copyright ul#bottom-menu li:hover a{
+    color: #4db2ec;
+    transition: all 0.3s;
+}
+
+
+/* --------------------------- SPECIAL ----------------------- */
+
+/* ------------ BACK-TOP ----------- */
+#back-top{
+    width: 50px;
+    height: 50px;
+    background: #23282d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    z-index: 99999999999;
+}
+#back-top:hover{
+    background: #4db2ec;
+    transition: all 0.25s;
+}
+
+/* ------------ FAST-CONTACT ----------- */
+#contact-fast{
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    padding: 10px;
+    background: #fff;
+    position: fixed;
+    bottom: -235px;
+    left: 60px;
+    transition: bottom 0.5s;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 90%);
+}
+
+.contact-head{
+    cursor: pointer;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.contact-head img{
+    height: 50px;
+    padding-right: 15px;
+}
+
+.contact-head h4{
+    font-weight: 500;
+    font-size: 21px;
+    color: #007bff;
+    padding-right: 5px;
+    margin-bottom: 0;
+}
+
+.contact-head i.fa-chevron-down{
+    color: #1a73e8;
+    padding: 20px 20px 25px 20px;
+}
+
+
+
+.contact-body{
+    flex-basis: 100%;
+    
+}
+
+.contact-body ul#list-recommened{
+    list-style:disc;
+    padding-bottom: 15px;
+    word-spacing: 1.5px;
+    padding-left: 100px;
+}
+
+ul#list-recommened li{
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.contact-body p{
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 65px;
+}
+
+.contact-body p a{
+    color: #ff2d2d;
+    font-weight: 600;
+}
+
+.contact-body #hotline{
+    padding-left: 65px;
+}
+.contact-body #hotline a{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+.contact-body #hotline a.chat{
+    background: #007bff;
+}
+
+.contact-body #hotline a.chat:hover{
+    background: #0257b3;
+}
+.contact-body #hotline a.call{
+    background: #ff2d2d;
+}
+.contact-body #hotline a.call:hover{
+    background: #c20b0b;
+}
+
+.open-contact-fast{
+    bottom: 0px!important;
+}
+
+/* ------------ RESPONSIVE-MENU ----------- */
+a.icon-respon-menu{
+    display: none;
+    text-decoration: none;
+    color: #eee;
+    padding: 10px;
+}
+#wp-respon-menu{
+    display: none;
+    width: 250px;
+    height: 100%;
+    background: #34495e;
+    transition: right 0.35s;
+}
+
+#wp-respon-menu h3{
+    text-align: center;
+    color: #eee;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 20px;
+}
+
+ul#responive-menu{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+ul#responive-menu li{
+    flex-basis: 100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.349);
+}
+
+ul#responive-menu li a{
+    display: block;
+    padding: 15px;
+    color: #eee;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#site.open-respon-menu #wrapper{
+    right: 250px;
+}
+
+#site.open-respon-menu #wp-respon-menu{
+    right: 0;
+}
